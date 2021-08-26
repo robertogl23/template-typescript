@@ -8,7 +8,7 @@ module.exports =
 {
     entry: 
     {
-        main: './app/src/index.js'
+        main: './app/src/index.ts'
     },
     output:
     {
