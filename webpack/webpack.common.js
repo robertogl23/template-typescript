@@ -26,14 +26,6 @@ module.exports =
                 test    : /\.(js|jsx)$/,
                 use     : 'babel-loader',
                 exclude : /node_modules/,
-                resolve :
-                {
-                    extensions : 
-                    [
-                        '.js',
-                        'jsx'
-                    ]
-                }
             },
             {
 				test : /\.s[ac]ss$/i,
@@ -48,6 +40,13 @@ module.exports =
                 type : "asset",
                 test : /\.(png|svg|jpg|jpeg|gif)$/i,
             },
+            
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            }
+            
         ]
     },
     resolve: 
@@ -56,7 +55,8 @@ module.exports =
         [
             ".js",
             ".json",
-            ".jsx"
+            ".jsx",
+            ".ts"
         ],
     },
     optimization: 
