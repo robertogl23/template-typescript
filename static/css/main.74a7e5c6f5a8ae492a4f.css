@@ -1,0 +1,1 @@
+:root{--BorderRadius: 8px}*{margin:0;padding:0;box-sizing:border-box}body{height:100vh;width:100%}.container{display:block;height:100%;width:100%;display:flex;align-items:center;justify-content:center}@media only screen and (min-width: 375px){.container{background:brown}}@media only screen and (max-width: 375px){.container{background:#5f9ea0}}
